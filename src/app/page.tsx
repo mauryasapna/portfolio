@@ -410,40 +410,87 @@ export default function Home() {
       {/* Main Content Area */}
       <main className="flex-1 relative z-10">
         {/* HERO SECTION */}
-        <section id="home" className="pt-16 pb-20 md:pt-24 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-            {/* Left Col: Text & Intro */}
-            <div className="lg:col-span-7 flex flex-col items-start text-left">
+        <section id="home" className="pt-8 pb-16 sm:pt-16 sm:pb-20 md:pt-24 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            {/* Profile Photo (Appears FIRST on Mobile with order-1, Right Side on Desktop with order-2) */}
+            <div className="order-1 lg:order-2 lg:col-span-5 flex justify-center lg:justify-end relative w-full pt-4 sm:pt-0">
+              <div className="relative w-[260px] h-[300px] sm:w-[320px] sm:h-[370px] lg:w-[380px] lg:h-[430px]">
+                {/* Outer Glow Ring */}
+                <div className="absolute -inset-2 bg-gradient-to-tr from-purple-600 via-indigo-500 to-sky-400 rounded-3xl opacity-75 blur-xl group-hover:opacity-100 transition duration-1000 animate-pulse-slow"></div>
+
+                {/* Profile Container */}
+                <div className="relative w-full h-full rounded-2xl overflow-hidden glass-card p-2 border-2 border-white/10 shadow-2xl bg-[#11131f]">
+                  <div className="relative w-full h-full rounded-xl overflow-hidden">
+                    <Image
+                      src="/profile.jpg"
+                      alt="Sapna Kumari"
+                      fill
+                      className="object-cover object-top hover:scale-105 transition-transform duration-700"
+                      priority
+                    />
+                    {/* Inner subtle gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#090a0f]/90 via-transparent to-transparent" />
+
+                    {/* Bottom overlay badge */}
+                    <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 p-2.5 sm:p-3 rounded-xl bg-[#0d0f17]/90 backdrop-blur-md border border-white/10 flex items-center justify-between">
+                      <div>
+                        <p className="text-xs font-bold text-white">Sapna Kumari</p>
+                        <p className="text-[10px] sm:text-[11px] text-purple-300 font-medium">Aspiring Software Engineer</p>
+                      </div>
+                      <span className="px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-[10px] font-bold rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                        GPA 8.9 / 10
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating Badge 1: Top Left */}
+                <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-6 flex items-center gap-1.5 px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-xl glass-card border border-purple-500/30 text-[11px] sm:text-xs font-semibold text-white shadow-xl animate-float">
+                  <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-purple-400" />
+                  <span>Aspiring SDE</span>
+                </div>
+
+                {/* Floating Badge 2: Bottom Right */}
+                <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 flex items-center gap-1.5 px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-xl glass-card border border-sky-500/30 text-[11px] sm:text-xs font-semibold text-white shadow-xl animate-float" style={{ animationDelay: "2.5s" }}>
+                  <Cloud className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-sky-400" />
+                  <span>Backend & QA</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Intro & Action Content (Appears SECOND on Mobile with order-2, Left Side on Desktop with order-1) */}
+            <div className="order-2 lg:order-1 lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
               {/* Status Pill */}
-              <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/25 text-purple-300 text-xs font-medium mb-6 backdrop-blur-md">
-                <span className="relative flex h-2 w-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-3.5 sm:py-1.5 rounded-full bg-purple-500/10 border border-purple-500/25 text-purple-300 text-[11px] sm:text-xs font-medium mb-5 backdrop-blur-md">
+                <span className="relative flex h-2 w-2 shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                Aspiring Software Engineer • Open to Opportunities
+                <span>Aspiring Software Engineer • Open to Roles</span>
               </div>
 
               {/* Main Heading */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] mb-4">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] mb-3 sm:mb-4">
                 Hi, I&apos;m <span className="text-gradient-purple">Sapna Kumari</span>
               </h1>
 
               {/* Tagline / Subtitle */}
-              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-300 mb-6 flex flex-wrap items-center gap-2">
+              <h2 className="text-base sm:text-xl md:text-2xl font-semibold text-slate-300 mb-5 sm:mb-6 flex flex-wrap items-center justify-center lg:justify-start gap-1.5 sm:gap-2">
                 <span className="text-purple-300 font-bold">Aspiring Software Engineer</span>
                 <span className="text-purple-400">•</span>
                 <span className="text-sky-400">Backend Development Learner</span>
                 <span className="text-purple-400">•</span>
-                <span className="text-emerald-400">Enthusiastic about QA Engineering</span>
+                <span className="text-emerald-400">QA Automation Enthusiast</span>
               </h2>
 
               {/* Intro Summary Paragraph */}
-              <p className="text-base sm:text-lg text-slate-300/90 leading-relaxed mb-8 max-w-2xl font-normal">
+              <p className="text-sm sm:text-base lg:text-lg text-slate-300/90 leading-relaxed mb-7 sm:mb-8 max-w-2xl font-normal">
                 Aspiring Software Engineer & Computer Science student with practical internship experience at <strong>OneSpider</strong>. I build modern, high-performance web applications, scalable cloud storage solutions, robust backend APIs, and automated QA testing frameworks.
               </p>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto mb-10">
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 w-full sm:w-auto mb-8 sm:mb-10">
                 <a
                   href="#projects"
                   className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-700 hover:from-purple-500 hover:to-indigo-500 text-white font-medium text-sm shadow-xl shadow-purple-600/30 transition-all flex items-center justify-center gap-2 group w-full sm:w-auto cursor-pointer"
@@ -463,7 +510,7 @@ export default function Home() {
               </div>
 
               {/* Social & Contact Badges */}
-              <div className="flex flex-wrap items-center gap-3 pt-2 text-sm text-slate-400">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3 text-xs sm:text-sm text-slate-400">
                 <a
                   href="https://github.com/mauryasapna"
                   target="_blank"
@@ -489,51 +536,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Col: Profile Photo with Glowing Frame & Floating Info Tags */}
-            <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
-              <div className="relative w-[300px] h-[340px] sm:w-[350px] sm:h-[400px] md:w-[380px] md:h-[430px]">
-                {/* Outer Glow Ring */}
-                <div className="absolute -inset-2 bg-gradient-to-tr from-purple-600 via-indigo-500 to-sky-400 rounded-3xl opacity-75 blur-xl group-hover:opacity-100 transition duration-1000 animate-pulse-slow"></div>
-
-                {/* Profile Container */}
-                <div className="relative w-full h-full rounded-2xl overflow-hidden glass-card p-2 border-2 border-white/10 shadow-2xl bg-[#11131f]">
-                  <div className="relative w-full h-full rounded-xl overflow-hidden">
-                    <Image
-                      src="/profile.jpg"
-                      alt="Sapna Kumari"
-                      fill
-                      className="object-cover object-top hover:scale-105 transition-transform duration-700"
-                      priority
-                    />
-                    {/* Inner subtle gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#090a0f]/90 via-transparent to-transparent" />
-
-                    {/* Bottom overlay badge */}
-                    <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-[#0d0f17]/90 backdrop-blur-md border border-white/10 flex items-center justify-between">
-                      <div>
-                        <p className="text-xs font-bold text-white">Sapna Kumari</p>
-                        <p className="text-[11px] text-purple-300 font-medium">Aspiring Software Engineer</p>
-                      </div>
-                      <span className="px-2.5 py-1 text-[10px] font-bold rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
-                        GPA 8.9 / 10
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating Badge 1: Top Left */}
-                <div className="absolute -top-4 -left-6 hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card border border-purple-500/30 text-xs font-semibold text-white shadow-xl animate-float">
-                  <Sparkles className="w-4 h-4 text-purple-400" />
-                  <span>Aspiring SDE</span>
-                </div>
-
-                {/* Floating Badge 2: Bottom Right */}
-                <div className="absolute -bottom-4 -right-4 hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card border border-sky-500/30 text-xs font-semibold text-white shadow-xl animate-float" style={{ animationDelay: "2.5s" }}>
-                  <Cloud className="w-4 h-4 text-sky-400" />
-                  <span>Backend & QA</span>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Quick Metrics Bar */}
