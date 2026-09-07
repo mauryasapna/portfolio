@@ -177,7 +177,7 @@ export default function Home() {
     {
       role: "Software Engineering Intern",
       company: "OneSpider",
-      period: "Internship Program",
+      period: "Aug 2026 – Nov 2026",
       type: "Internship",
       highlights: [
         "Developed scalable backend APIs, database models, and web components for client applications.",
@@ -1098,7 +1098,7 @@ export default function Home() {
                   <div>
                     <div className="flex justify-between items-baseline">
                       <span className="font-bold text-white text-xs">Software Engineering Intern — OneSpider</span>
-                      <span className="text-slate-400 text-xs">Internship Program</span>
+                      <span className="text-slate-400 text-xs">Aug 2026 – Nov 2026</span>
                     </div>
                     <p className="text-slate-300 text-xs mt-0.5">• Developed backend APIs, database schemas, and responsive web components adhering to agile software engineering practices.</p>
                   </div>
