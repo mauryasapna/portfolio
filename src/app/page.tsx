@@ -940,24 +940,25 @@ export default function Home() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
           <div className="relative w-full max-w-3xl max-h-[90vh] bg-[#0d0f17] border border-white/15 rounded-2xl shadow-2xl flex flex-col overflow-hidden">
             {/* Modal Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#121522]">
-              <div className="flex items-center gap-2">
-                <FileText className="w-5 h-5 text-purple-400" />
-                <h3 className="font-bold text-white text-base">ATS-Formatted Resume — Sapna Kumari</h3>
+            <div className="flex items-center justify-between px-4 sm:px-6 py-3.5 sm:py-4 border-b border-white/10 bg-[#121522]">
+              <div className="flex items-center gap-2 min-w-0">
+                <FileText className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400 shrink-0" />
+                <h3 className="font-bold text-white text-xs sm:text-base truncate">ATS Resume — Sapna Kumari</h3>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 shrink-0">
                 <button
                   onClick={() => window.print()}
-                  className="px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer"
+                  className="px-2.5 sm:px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white text-[11px] sm:text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer"
                 >
                   <Download className="w-3.5 h-3.5" />
-                  Print / Save PDF
+                  <span>PDF / Print</span>
                 </button>
                 <button
                   onClick={() => setShowResumeModal(false)}
                   className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white transition-all cursor-pointer"
+                  aria-label="Close resume modal"
                 >
-                  <X className="w-5 h-5" />
+                  <X className="w-4 h-4 sm:w-5 sm:h-5" />
                 </button>
               </div>
             </div>
