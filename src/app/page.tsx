@@ -280,6 +280,7 @@ export default function Home() {
                 src="/profile.jpg"
                 alt="Sapna Kumari"
                 fill
+                sizes="40px"
                 className="object-cover"
                 priority
               />
@@ -426,6 +427,7 @@ export default function Home() {
                       src="/profile.jpg"
                       alt="Sapna Kumari"
                       fill
+                      sizes="(max-width: 640px) 260px, (max-width: 1024px) 320px, 380px"
                       className="object-cover object-top hover:scale-105 transition-transform duration-700"
                       priority
                     />
