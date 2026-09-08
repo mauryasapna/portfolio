@@ -21,25 +21,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://my-showcase-spark-21.lovable.app"),
-  title: "Sapna Kumari | Aspiring Software Engineer",
+  title: "Sapna Kumari | Software Developer",
   description:
-    "Portfolio and resume of Sapna Kumari — Aspiring Software Engineer, Backend Development Learner, and QA Engineering enthusiast.",
+    "Portfolio and resume of Sapna Kumari — Software Developer specializing in full-stack web applications, backend APIs, and test automation.",
   keywords: [
     "Sapna Kumari",
-    "Aspiring Software Engineer",
-    "Software Engineer Fresher",
-    "Backend Development",
-    "QA Engineer",
+    "Software Developer",
     "Full Stack Developer",
+    "Backend Developer",
+    "QA Engineer",
     "Python Developer",
+    "React Developer",
     "OneSpider",
   ],
   authors: [{ name: "Sapna Kumari" }],
   creator: "Sapna Kumari",
   openGraph: {
-    title: "Sapna Kumari | Aspiring Software Engineer",
+    title: "Sapna Kumari | Software Developer",
     description:
-      "Aspiring Software Engineer | Backend Development Learner | QA Engineering Enthusiast",
+      "Software Developer | Full Stack Web & Backend APIs",
 
 
     url: "https://my-showcase-spark-21.lovable.app/",

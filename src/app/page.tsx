@@ -54,7 +54,7 @@ function LinkedinIcon({ className = "w-4 h-4" }: { className?: string }) {
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [copiedEmail, setCopiedEmail] = useState(false);
-  const [activeTab, setActiveTab] = useState<"all" | "web" | "ai" | "automation">("all");
+  const [activeTab, setActiveTab] = useState<"all" | "web" | "automation">("all");
   const [showResumeModal, setShowResumeModal] = useState(false);
 
   const copyToClipboard = () => {
@@ -95,9 +95,9 @@ export default function Home() {
       skills: ["JWT (JSON Web Tokens)", "Clerk Auth", "Supabase Auth", "Firebase Auth"],
     },
     {
-      category: "Core Engineering & AI",
+      category: "Core Computer Science",
       icon: <Code2 className="w-5 h-5 text-indigo-400" />,
-      skills: ["Data Structures & Algorithms", "OOP", "DBMS", "Computer Networks", "Deep Learning", "Computer Vision (OpenCV)"],
+      skills: ["Data Structures & Algorithms", "Object-Oriented Programming (OOP)", "DBMS", "Operating Systems", "Computer Networks", "Problem Solving"],
     },
     {
       category: "Testing & Tools",
@@ -239,23 +239,23 @@ export default function Home() {
 
   const achievements = [
     {
-      title: "Full-Stack Web Architect",
-      desc: "Architected multiple responsive, production-ready full-stack applications with React 19, Next.js, and Node.js.",
+      title: "Full-Stack Web Development",
+      desc: "Built and deployed responsive full-stack applications with React 19, Next.js, and Node.js.",
       icon: <Globe className="w-5 h-5 text-purple-400" />,
     },
     {
-      title: "AI & Computer Vision Innovations",
-      desc: "Built Deep Learning applications including GlowAura AI for face/hair detection and voice accessibility assistants.",
-      icon: <Sparkles className="w-5 h-5 text-sky-400" />,
+      title: "Cloud & Storage Integration",
+      desc: "Implemented cloud storage management, CDN asset pipelines with ImageKit, and authentication flows.",
+      icon: <Cloud className="w-5 h-5 text-sky-400" />,
     },
     {
-      title: "End-to-End Automation Frameworks",
+      title: "QA & Test Automation",
       desc: "Engineered automated testing frameworks with Python, Selenium WebDriver, and Page Object Model design patterns.",
       icon: <CheckCircle2 className="w-5 h-5 text-emerald-400" />,
     },
     {
       title: "3 Technical Internships",
-      desc: "Completed Software Engineering & Python internships at OneSpider, Elektro Labs, and Infobyte.in.",
+      desc: "Completed Software Engineering, Python, and Cloud internships at OneSpider, Elektro Labs, and Infobyte.in.",
       icon: <Award className="w-5 h-5 text-amber-400" />,
     },
   ];
@@ -289,7 +289,7 @@ export default function Home() {
                 Sapna Kumari
                 <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
               </span>
-              <span className="text-xs text-purple-300 font-medium block -mt-0.5">Aspiring Software Engineer</span>
+              <span className="text-xs text-purple-300 font-medium block -mt-0.5">Software Developer</span>
             </div>
           </a>
 
@@ -433,12 +433,12 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#090a0f]/90 via-transparent to-transparent" />
 
                     {/* Bottom overlay badge */}
-                    <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 p-2.5 sm:p-3 rounded-xl bg-[#0d0f17]/90 backdrop-blur-md border border-white/10 flex items-center justify-between">
-                      <div>
-                        <p className="text-xs font-bold text-white">Sapna Kumari</p>
-                        <p className="text-[10px] sm:text-[11px] text-purple-300 font-medium">Aspiring Software Engineer</p>
+                    <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 p-2.5 sm:p-3 rounded-xl bg-[#0d0f17]/90 backdrop-blur-md border border-white/10 flex items-center justify-between gap-2">
+                      <div className="min-w-0">
+                        <p className="text-xs font-bold text-white truncate">Sapna Kumari</p>
+                        <p className="text-[10px] sm:text-[11px] text-purple-300 font-medium truncate">Software Developer</p>
                       </div>
-                      <span className="px-2 sm:px-2.5 py-0.5 sm:py-1 text-[9px] sm:text-[10px] font-bold rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                      <span className="shrink-0 px-2.5 py-1 text-[11px] sm:text-xs font-bold rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 whitespace-nowrap shadow-sm">
                         GPA 8.9 / 10
                       </span>
                     </div>
@@ -448,14 +448,10 @@ export default function Home() {
                 {/* Floating Badge 1: Top Left */}
                 <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-6 flex items-center gap-1.5 px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-xl glass-card border border-purple-500/30 text-[11px] sm:text-xs font-semibold text-white shadow-xl animate-float">
                   <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-purple-400" />
-                  <span>Aspiring SDE</span>
+                  <span>Software Developer</span>
                 </div>
 
-                {/* Floating Badge 2: Bottom Right */}
-                <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 flex items-center gap-1.5 px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-xl glass-card border border-sky-500/30 text-[11px] sm:text-xs font-semibold text-white shadow-xl animate-float" style={{ animationDelay: "2.5s" }}>
-                  <Cloud className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-sky-400" />
-                  <span>Backend & QA</span>
-                </div>
+
               </div>
             </div>
 
@@ -467,7 +463,7 @@ export default function Home() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <span>Aspiring Software Engineer • Open to Roles</span>
+                <span>Software Developer • Open to Roles</span>
               </div>
 
               {/* Main Heading */}
@@ -476,17 +472,13 @@ export default function Home() {
               </h1>
 
               {/* Tagline / Subtitle */}
-              <h2 className="text-base sm:text-xl md:text-2xl font-semibold text-slate-300 mb-5 sm:mb-6 flex flex-wrap items-center justify-center lg:justify-start gap-1.5 sm:gap-2">
-                <span className="text-purple-300 font-bold">Aspiring Software Engineer</span>
-                <span className="text-purple-400">•</span>
-                <span className="text-sky-400">Backend Development Learner</span>
-                <span className="text-purple-400">•</span>
-                <span className="text-emerald-400">QA Automation Enthusiast</span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-indigo-200 to-sky-300 mb-5 sm:mb-6">
+                Software Developer
               </h2>
 
               {/* Intro Summary Paragraph */}
               <p className="text-sm sm:text-base lg:text-lg text-slate-300/90 leading-relaxed mb-7 sm:mb-8 max-w-2xl font-normal">
-                Aspiring Software Engineer & Computer Science student with practical internship experience at <strong>OneSpider</strong>. I build modern, high-performance web applications, scalable cloud storage solutions, robust backend APIs, and automated QA testing frameworks.
+                Software Developer with practical internship experience at <strong>OneSpider</strong>. I build responsive web applications, cloud storage solutions, backend APIs, and automated QA testing frameworks.
               </p>
 
               {/* Action Buttons */}
@@ -575,13 +567,13 @@ export default function Home() {
                 Who I Am & What I Do
               </h3>
               <p className="text-slate-300 leading-relaxed mb-4 text-base">
-                A motivated and detail-oriented <strong>Aspiring Software Engineer</strong> and <strong>Computer Science & Engineering</strong> student with practical internship experience at <strong>OneSpider</strong>, <strong>Elektro Labs</strong>, and <strong>Infobyte.in</strong>. Possesses strong knowledge of backend development, web architecture, databases, QA test automation, and Artificial Intelligence.
+                A motivated and detail-oriented <strong>Software Developer</strong> with practical internship experience at <strong>OneSpider</strong>, <strong>Elektro Labs</strong>, and <strong>Infobyte.in</strong>. Possesses a solid foundation in backend development, web architecture, databases, and QA test automation.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4 text-base">
-                Skilled in <strong>Java, Python, JavaScript, React, Next.js, Node.js, PHP, SQL, MongoDB, Supabase, Firebase</strong>, and modern web technologies. Experienced in developing full-stack applications, cloud/file-storage systems, e-commerce websites, automated testing frameworks with Selenium & POM, and AI-based projects.
+                Skilled in <strong>Java, Python, JavaScript, React, Next.js, Node.js, PHP, SQL, MongoDB, Supabase, Firebase</strong>, and modern web technologies. Experienced in developing full-stack applications, cloud file storage platforms, responsive e-commerce websites, and automated testing frameworks with Selenium & POM.
               </p>
               <p className="text-slate-300 leading-relaxed text-base">
-                Possesses a strong understanding of <strong>Data Structures, Algorithms, Databases, Computer Networks, authentication, APIs</strong>, and software engineering. Passionate about building innovative solutions using Artificial Intelligence, Machine Learning, Computer Vision, and full-stack technologies. A quick learner with strong problem-solving, teamwork, communication, and development capabilities.
+                Possesses a strong understanding of <strong>Data Structures, Algorithms, Object-Oriented Programming, DBMS, Computer Networks, and REST APIs</strong>. A quick learner with strong problem-solving, teamwork, communication, and development capabilities.
               </p>
             </div>
 
@@ -610,7 +602,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">Technical Skills</h2>
             <div className="w-16 h-1 bg-gradient-to-r from-sky-400 to-purple-500 rounded-full mt-3" />
             <p className="text-slate-400 text-sm max-w-xl mt-3">
-              Comprehensive toolkit spanning full-stack web engineering, cloud infrastructure, AI models, and QA testing.
+              Comprehensive toolkit spanning full-stack web development, backend APIs, databases, cloud storage, and QA testing.
             </p>
           </div>
 
@@ -648,7 +640,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">Featured Projects</h2>
             <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-sky-400 rounded-full mt-3" />
             <p className="text-slate-400 text-sm max-w-xl mt-3">
-              Selected real-world applications showcasing full-stack development, cloud architecture, and AI integrations.
+              Selected real-world applications showcasing full-stack development, cloud storage integration, and test automation.
             </p>
           </div>
 
@@ -846,7 +838,7 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white">Let&apos;s Build Something Together</h2>
               <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mt-3" />
               <p className="text-slate-300 text-sm max-w-lg mt-3">
-                I am actively seeking software development, full-stack, and AI fresher roles or collaborative projects. Feel free to reach out directly!
+                I am actively seeking software development and full-stack engineering fresher roles. Feel free to reach out directly!
               </p>
             </div>
 
@@ -920,7 +912,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="border-t border-white/[0.06] py-8 px-4 text-center text-xs text-slate-500 glass-nav">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} Sapna Kumari • Aspiring Software Engineer</p>
+          <p>© {new Date().getFullYear()} Sapna Kumari • Software Developer</p>
           <div className="flex items-center gap-4">
             <a href="https://github.com/mauryasapna" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">
               GitHub
@@ -969,7 +961,7 @@ export default function Home() {
               <div className="text-center border-b border-white/10 pb-5">
                 <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-wide">SAPNA KUMARI</h1>
                 <p className="text-purple-400 font-semibold text-xs mt-1">
-                  Aspiring Software Engineer
+                  Software Developer
                 </p>
                 <p className="text-slate-300 text-xs mt-1">
                   Uttar Pradesh, India • sapnassm62062@gmail.com •{" "}
@@ -989,7 +981,7 @@ export default function Home() {
                   Professional Summary
                 </h4>
                 <p className="text-slate-300 leading-relaxed text-xs">
-                  Aspiring Software Engineer and Computer Science & Engineering student with practical internship experience at OneSpider, Elektro Labs, and Infobyte.in. Strong foundation in backend development, scalable web architecture, databases, automated QA testing, and Artificial Intelligence. Experienced in building responsive web applications using React, Next.js, Node.js, Python, and Firebase. Strong grasp of Data Structures, Algorithms, and clean code practices seeking fresher software engineering opportunities.
+                  Software Developer with practical internship experience at OneSpider, Elektro Labs, and Infobyte.in. Strong foundation in backend development, web architecture, relational and NoSQL databases, automated QA testing, and core computer science fundamentals. Experienced in building full-stack web applications using React, Next.js, Node.js, Python, SQL, and Firebase. Seeking entry-level Software Developer opportunities.
                 </p>
               </div>
 
@@ -1032,7 +1024,7 @@ export default function Home() {
                   <li><strong>Backend & APIs:</strong> Node.js, Express.js, RESTful APIs, Brevo REST API</li>
                   <li><strong>Databases & Storage:</strong> MongoDB, Supabase, Firebase, SQL, ImageKit, Cloudinary, Cloudflare</li>
                   <li><strong>Authentication:</strong> JWT, Clerk, Supabase Auth, Firebase Auth</li>
-                  <li><strong>Core Engineering:</strong> Data Structures & Algorithms, OOP, DBMS, Computer Networks, AI & Computer Vision</li>
+                  <li><strong>Core CS:</strong> Data Structures & Algorithms, OOP, DBMS, Operating Systems, Computer Networks, REST APIs</li>
                   <li><strong>Testing & Tools:</strong> Selenium WebDriver, PyTest, Page Object Model (POM), Git, GitHub, Linux, Windows</li>
                 </ul>
               </div>
