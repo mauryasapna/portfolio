@@ -132,6 +132,18 @@ export default function Home() {
       featured: true,
     },
     {
+      id: "mailflow",
+      title: "MailFlow – Email Automation & Management System",
+      category: "web",
+      badge: "PHP & Full Stack",
+      description:
+        "Engineered a centralized email automation and management system with Core PHP, MariaDB, and OneSpider Green Omni API, featuring dynamic template generation, multi-recipient dispatching, delivery tracking, and contact management.",
+      tech: ["PHP", "MariaDB / MySQL", "JavaScript", "Bootstrap 5", "REST API"],
+      github: "https://github.com/mauryasapna",
+      live: null,
+      featured: true,
+    },
+    {
       id: "react-todo",
       title: "React Firebase Task Manager",
       category: "web",
@@ -187,7 +199,7 @@ export default function Home() {
       ],
     },
     {
-      role: "Python Programming Intern",
+      role: "IT Developer",
       company: "ELEKTRO LABS TECHNOLOGIES PVT. LTD.",
       period: "May 2025 – July 2025",
       type: "Internship",
@@ -217,7 +229,7 @@ export default function Home() {
       degree: "B.Tech in Computer Science and Engineering",
       institution: "Swami Vivekanand Subharti University",
       period: "2023 – 2027",
-      score: "GPA: 8.9 / 10",
+      score: "CGPA: 9.1 / 10",
       description:
         "Comprehensive coursework in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, and Artificial Intelligence.",
     },
@@ -255,7 +267,7 @@ export default function Home() {
     },
     {
       title: "3 Technical Internships",
-      desc: "Completed Software Engineering, Python, and Cloud internships at OneSpider, Elektro Labs, and Infobyte.in.",
+      desc: "Completed Software Engineering, IT Developer, and Cloud internships at OneSpider, Elektro Labs, and Infobyte.in.",
       icon: <Award className="w-5 h-5 text-amber-400" />,
     },
   ];
@@ -441,7 +453,7 @@ export default function Home() {
                         <p className="text-[10px] sm:text-[11px] text-purple-300 font-medium truncate">Software Developer</p>
                       </div>
                       <span className="shrink-0 px-2.5 py-1 text-[11px] sm:text-xs font-bold rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 whitespace-nowrap shadow-sm">
-                        GPA 8.9 / 10
+                        CGPA 9.1 / 10
                       </span>
                     </div>
                   </div>
@@ -547,8 +559,8 @@ export default function Home() {
               <span className="text-xs sm:text-sm text-slate-400 font-medium">Tech Internships</span>
             </div>
             <div className="glass-card p-5 rounded-2xl text-center border border-white/[0.07] hover:border-amber-500/30 transition-all">
-              <span className="block text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1">8.9</span>
-              <span className="text-xs sm:text-sm text-slate-400 font-medium">B.Tech GPA</span>
+              <span className="block text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1">9.1</span>
+              <span className="text-xs sm:text-sm text-slate-400 font-medium">B.Tech CGPA</span>
             </div>
           </div>
 
@@ -997,7 +1009,7 @@ export default function Home() {
                 <div className="space-y-2">
                   <div className="flex justify-between items-baseline">
                     <span className="font-bold text-white text-xs">B.Tech – Computer Science and Engineering</span>
-                    <span className="text-slate-400 text-xs">GPA: 8.9 / 10 | 2023 – 2027</span>
+                    <span className="text-slate-400 text-xs">CGPA: 9.1 / 10 | 2023 – 2027</span>
                   </div>
                   <p className="text-slate-400 text-[11px]">Swami Vivekanand Subharti University</p>
 
@@ -1057,6 +1069,15 @@ export default function Home() {
 
                   <div>
                     <div className="flex justify-between items-baseline">
+                      <span className="font-bold text-white text-xs">MailFlow – Email Automation & Management System</span>
+                      <span className="text-purple-400 text-[11px]">PHP, MariaDB, REST API</span>
+                    </div>
+                    <p className="text-slate-300 text-xs mt-0.5">• Engineered a centralized email automation platform with dynamic template generation, multi-recipient dispatching, and delivery tracking via OneSpider Green Omni API.</p>
+                    <p className="text-[11px] text-slate-400">GitHub: https://github.com/mauryasapna</p>
+                  </div>
+
+                  <div>
+                    <div className="flex justify-between items-baseline">
                       <span className="font-bold text-white text-xs">React Firebase To-Do Application</span>
                       <span className="text-purple-400 text-[11px]">React, Firebase, Firestore</span>
                     </div>
@@ -1100,7 +1121,7 @@ export default function Home() {
 
                   <div>
                     <div className="flex justify-between items-baseline">
-                      <span className="font-bold text-white text-xs">Python Programming Intern — ELEKTRO LABS TECHNOLOGIES PVT. LTD.</span>
+                      <span className="font-bold text-white text-xs">IT Developer — ELEKTRO LABS TECHNOLOGIES PVT. LTD.</span>
                       <span className="text-slate-400 text-xs">May 2025 – July 2025</span>
                     </div>
                     <p className="text-slate-300 text-xs mt-0.5">• Developed Python software modules, automated routine scripts, and delivered production-ready deliverables.</p>

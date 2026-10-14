@@ -123,7 +123,7 @@ npm run start
 
 ## 👩‍💻 About Sapna Kumari
 
-- 🎓 **B.Tech in Computer Science & Engineering** (2023 – 2027) — **8.9 CGPA**
+- 🎓 **B.Tech in Computer Science & Engineering** (2023 – 2027) — **9.1 CGPA**
 - 💼 **Software Engineering Intern** at **OneSpider**
 - 🔍 **Specializations**: Full Stack Web Development (Next.js, React, Node.js, MongoDB), Backend Architecture, Cloud Integrations (ImageKit, Cloudinary), QA Automation (Selenium, TestNG, JUnit).
 
